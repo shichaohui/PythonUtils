@@ -5,6 +5,7 @@ import sys
 # 兼容 python2 的编码
 try:
     reload(sys)
+    # pylint: disable=no-member
     sys.setdefaultencoding('utf-8')
 except NameError as e:
     pass
